@@ -66,4 +66,4 @@ def scraper(scrapingtable=readfromfile(loc)):
         sleep(5)
 
 scraper(table)
-print ("\n")#Add new line after execution
+print ("\n")  #Add new line after execution
