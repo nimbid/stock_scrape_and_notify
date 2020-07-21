@@ -15,9 +15,6 @@ def notify(title, subtitle, text):
 loc = input("Enter path of portfolio file: ")
 print ("\n")#Go to new line
 
-#Added hard-coded value here for location as cron job won't run with dependency on user input.
-#loc='/Users/bnimish/Desktop/portfolio.csv'
-
 #Read portfolio table from saved csv file.
 #First row of table will have titles. Start from 2nd row when making HTTP requests.
 table=[]
