@@ -1,0 +1,7 @@
+Cron:
+0 9-16/2 * * 1-5 /Library/Frameworks/Python.framework/Versions/3.8/bin/python3 /Users/bnimish/Desktop/stockscraper.py < /Users/nimbid/Desktop/portfolio_loc.txt >> /Users/nimbid/Desktop/StockScriptTesting.txt
+
+What this cron job does:
+1. This runs the script at minute 0 past every 2nd hour from 9 through 16 on every day-of-week from Monday through Friday.
+2. Passes file portfolio_loc.txt (containing the complete path to the portfolio csv file) as input to the script.
+3. Redirects output of to a log file named StockScriptTesting.txt so that every results are appended to previous ones in the same file.
