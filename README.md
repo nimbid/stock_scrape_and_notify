@@ -22,4 +22,4 @@ There are 4 files here:
 
 **Tips**:
 * Run stockscraper.py/stockscraper_windows.py as part of a cron job (can use [scheduler_cron.txt](https://github.com/nimbid/stock_scrape_and_notify/blob/master/scheduler_cron.txt) as a reference) to use this script as a monitoring script.
-* To change your portfolio, you can either run input.py again or modify the csv file directly.
+* To change your portfolio, you can either run input.py again or modify the CSV file directly.
