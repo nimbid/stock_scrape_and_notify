@@ -49,14 +49,14 @@ def scraper(tab):
         # parse the html using beautiful soup and store in variable `soup`
         soup = BeautifulSoup(page, 'html.parser')
         # Take out the <div> of name and get its value
-        name_box = soup.find('h1', attrs={'class': 'pcstname'})
+        name_box = soup.find('div', attrs={'class': 'inid_name'}).find_next('h1')
         name = name_box.text.strip()  # strip() is used to remove starting and trailing
         # Print date and time, followed by scrip name and price.
         now = datetime.datetime.now()
         print ("Date and time : " + now.strftime("%Y-%m-%d %H:%M:%S"))
         print (name)
         # get the index price
-        price_box = soup.find('div', attrs={'class': 'pcnsb div_live_price_wrap'}).find_next('span')
+        price_box = soup.find('div', attrs={'class':'inprice1 nsecp'})
         price = price_box.text
         # num_price=float(price)
         print (price)
